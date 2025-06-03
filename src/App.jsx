@@ -94,6 +94,7 @@ function App() {
   const handleLogin = (email, password) => {
     // Simulate login
     if (email === "admin@example.com" && password === "admin123") {
+      console.log("Login attempt:", email, password);
       const user = { email, role: 'admin', name: 'Admin User' };
       setCurrentUser(user);
       localStorage.setItem('currentUser', JSON.stringify(user));
